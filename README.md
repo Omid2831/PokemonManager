@@ -1,108 +1,109 @@
-# Pokemon-Team-Manager
+# Pokemon Team Manager
 
-## **1. Key Features / Functionaliteiten**
+## **1. Key Features**
 
-1. **Teams managen**
+1. **Manage Teams**
+   * Create and delete teams.
+   * View teams (list or detail view).
 
-   * Teams aanmaken en verwijderen.
-   * Teams bekijken (lijst of detailweergave).
+2. **Manage Pokemon**
+   * Add/remove Pokemon to/from teams.
+   * Track favorite Pokemon for quick selection.
 
-2. **Pokemon beheren**
+3. **Team Building**
+   * Build teams from selected Pokemon (e.g., drag & drop or selection).
+   * Filter/search your Pokemon list or favorites.
 
-   * Pokemon toevoegen/verwijderen aan teams.
-   * Favorieten Pokemon bijhouden (voor snelle selectie).
-
-3. **Team building**
-
-   * Teams maken van geselecteerde Pokemon (bijv. drag & drop of selecteren).
-   * Filteren / zoeken in je Pokemon-lijst of favorieten.
-
-4. **Herbruikbare componenten**
-
-   * Pokemon Card (naam, type, afbeelding).
-   * Team Card / Team Item (teamnaam, overzicht van Pokemon).
-   * Buttons, Modals voor toevoegen/verwijderen.
-   * Navbar / Header voor navigatie tussen pagina’s.
+4. **Reusable Components**
+   * Pokemon Card (name, type, image).
+   * Team Card / Team Item (team name, Pokemon overview).
+   * Buttons, Modals for adding/removing.
+   * Navbar / Header for page navigation.
 
 ---
 
-### **2. Aantal Pagina’s**
+### **2. Number of Pages**
 
 1. **Dashboard / Home**
-
-   * Overzicht van al je teams + favorieten.
+   * Overview of all your teams + favorites.
 
 2. **Team Detail / Builder**
-
-   * Lijst van Pokemon in een specifiek team + optie om te beheren.
+   * List of Pokemon in a specific team + management options.
 
 3. **Pokemon Library**
+   * Fetch all Pokemon from the PokéAPI + search/filter.
 
-   * Alle Pokemon ophalen uit de PokéAPI + zoeken / filteren.
+4. **Favorites**
+   * Overview of favorite Pokemon + quick option to create teams.
 
-4. **Favorieten**
+5. *(Optional)* **Settings / Profile**
+   * User preferences or settings (not essential for MVP).
 
-   * Overzicht van favorieten Pokemon + directe optie om teams te maken.
-
-5. *(Optioneel)* **Settings / Profile**
-
-   * Instellingen of gebruikersvoorkeuren (niet essentieel in MVP).
-
-**Conclusie:** **4-5 pagina’s** is genoeg voor een eerste versie.
+**Conclusion:** **4-5 pages** are enough for a first version.
 
 ---
 
-### **4. Wireframe / Structuur Suggestie**
+### **3. Wireframe / Structure Suggestion**
 
-* **Navbar / Sidebar** → links: Dashboard, Pokemon Library, Favorieten.
-* **Dashboard** → lijst van teams, “+ Team” knop.
-* **Team Detail** → teamnaam, Pokemon lijst, “+ Pokemon” knop, “Verwijder Team”.
-* **Pokemon Library** → filter / zoekfunctie, Pokemon Cards met “Toevoegen aan team” of “Favoriet”.
-* **Favorieten** → lijst van favoriete Pokemon, knop “Maak team met favorieten”.
-
----
-
-Ah, perfect. Jij wilt het **feature-based / module-based** opzetten in plaats van “alles in één map”, zodat je app schaalbaar blijft en makkelijk te onderhouden is. Laten we dit stap voor stap bekijken voor jouw **Pokemon-team manager**.
+* **Navbar / Sidebar** → left: Dashboard, Pokemon Library, Favorites.
+* **Dashboard** → list of teams, “+ Team” button.
+* **Team Detail** → team name, Pokemon list, “+ Pokemon” button, “Delete Team”.
+* **Pokemon Library** → filter/search, Pokemon Cards with “Add to team” or “Favorite”.
+* **Favorites** → list of favorite Pokemon, button “Create team from favorites”.
 
 ---
 
-## **1. Wat betekent feature-based?**
-
-In plaats van mappen te maken op type (`components`, `pages`, `services`) maak je mappen per **feature** of “functionaliteit”.
-Elke feature bevat:
-
-* Componenten die alleen voor die feature zijn.
-* API calls of services die specifiek zijn.
-* State / context specifiek voor die feature (optioneel).
-* Page(s) die bij die feature horen.
+You want to set up your app **feature-based / module-based** instead of “everything in one folder”, so your app stays scalable and easy to maintain. Here’s how you can approach this for your **Pokemon Team Manager**.
 
 ---
 
-## **2. Voor jouw app: features**
+## **1. What does feature-based mean?**
 
-**Features kunnen bijvoorbeeld zijn:**
+Instead of creating folders by type (`components`, `pages`, `services`), you create folders per **feature** or functionality.
+Each feature contains:
+
+* Components specific to that feature.
+* API calls or services specific to that feature.
+* State/context specific to that feature (optional).
+* Page(s) belonging to that feature.
+
+---
+
+## **2. For your app: features**
+
+**Example features:**
 
 1. **Teams**
-
-   * Pagina: `Dashboard` + `TeamDetail`
-   * Componenten: `TeamCard`, `TeamForm`
+   * Pages: `Dashboard` + `TeamDetail`
+   * Components: `TeamCard`, `TeamForm`
    * Services: team CRUD
-   * Context / state: lijst van teams
+   * Context/state: list of teams
 
 2. **PokemonLibrary**
-
-   * Pagina: `PokemonLibrary`
-   * Componenten: `PokemonCard`, `PokemonFilter`
+   * Page: `PokemonLibrary`
+   * Components: `PokemonCard`, `PokemonFilter`
    * Services: fetch PokéAPI
-   * State: alle Pokemon, zoek/filter status
+   * State: all Pokemon, search/filter status
 
 3. **Favorites**
+   * Page: `Favorites`
+   * Components: `FavoritePokemonList`, `FavoriteToggle`
+   * State: list of favorites
 
-   * Pagina: `Favorites`
-   * Componenten: `FavoritePokemonList`, `FavoriteToggle`
-   * State: lijst van favorieten
+4. *(Optional)* Shared
+   * Global reusable UI components: `Button`, `Modal`, `Navbar`, `Input`
+   * Context: global themes or user settings
 
-4. *(Optioneel)* Shared
 
-   * Globale herbruikbare UI componenten: `Button`, `Modal`, `Navbar`, `Input`
-   * Context: globale thema’s of user settings
+## **3. Technology: Zustand for State Management**
+
+For this app, I use (**Zustand**)[https://zustand-demo.pmnd.rs/] as the state management solution instead of local storage.
+
+**Why Zustand?**
+- Zustand provides a centralized, reactive way to manage data (such as teams, favorites, and Pokemon lists).
+- Unlike local storage, Zustand is directly connected to the UI: changes are instantly visible without manual synchronization.
+- Zustand is scalable and suitable for larger apps, while local storage is mainly useful for simple, temporary data.
+- Data remains structured and easy to maintain, which is important for future expansions (like multi-device sync or user profiles).
+
+**Purpose of this choice:**
+The goal is to build a modern, scalable, and maintainable app where state management is simple and reliable. Zustand makes it possible to quickly expand features and keep the user experience smooth.
