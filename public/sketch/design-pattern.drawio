@@ -1,0 +1,112 @@
+<mxfile host="65bd71144e">
+    <diagram id="A-hmR17iXRxuS2zzP3H7" name="Homepage/library">
+        <mxGraphModel dx="1385" dy="840" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1600" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="d" style="whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;glass=1;rounded=0;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="120" width="810" height="720" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="log in log out" style="html=1;shadow=1;dashed=0;fillColor=#F8F9FA;strokeColor=none;fontSize=16;fontColor=#7C7C7D;align=right;spacing=15;rounded=1;sketch=1;curveFitting=1;jiggle=2;glass=0;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="140" width="760" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="swimlane;shape=mxgraph.bootstrap.anchor;strokeColor=none;fillColor=none;fontColor=#0085FC;fontStyle=0;childLayout=stackLayout;horizontal=0;startSize=0;horizontalStack=1;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;resizeWidth=0;" parent="3" vertex="1">
+                    <mxGeometry y="5" width="350" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="mybrand" style="text;strokeColor=none;align=center;verticalAlign=middle;spacingLeft=10;spacingRight=10;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fillColor=none;fontColor=#181819;fontSize=16;" parent="4" vertex="1">
+                    <mxGeometry width="140" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="4" source="6" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="280" y="10" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="LalX2TbN5CzakvG55732-27" value="Pokemon Library" style="text;strokeColor=none;align=center;verticalAlign=middle;spacingLeft=10;spacingRight=10;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fillColor=none;fontColor=#7C7C7D;fontSize=14;" parent="4" vertex="1">
+                    <mxGeometry x="140" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="&lt;span style=&quot;color: rgb(131, 131, 132);&quot;&gt;Dashboard&lt;/span&gt;" style="text;strokeColor=none;align=center;verticalAlign=middle;spacingLeft=10;spacingRight=10;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fillColor=none;fontColor=#181819;fontSize=14;" parent="4" vertex="1">
+                    <mxGeometry x="220" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Favorites&amp;nbsp;" style="text;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;spacingRight=10;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fillColor=none;fontColor=#7C7C7D;fontSize=14;" parent="4" vertex="1">
+                    <mxGeometry x="280" width="70" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Some quick example text to build on the card title and make up the bulk of the card&#39;s content." style="html=1;shadow=1;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=#DFDFDF;html=1;whiteSpace=wrap;fillColor=#ffffff;fontColor=#000000;verticalAlign=bottom;align=left;spacing=20;fontSize=14;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="280" width="250" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Image cap" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.topButton;rSize=5;perimeter=none;whiteSpace=wrap;fillColor=#868E96;strokeColor=#DFDFDF;fontColor=#DEE2E6;resizeWidth=1;fontSize=18;" parent="16" vertex="1">
+                    <mxGeometry width="250" height="180" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Some quick example text to build on the card title and make up the bulk of the card&#39;s content." style="html=1;shadow=1;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=#DFDFDF;html=1;whiteSpace=wrap;fillColor=#ffffff;fontColor=#000000;verticalAlign=bottom;align=left;spacing=20;fontSize=14;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="280" width="250" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Image cap" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.topButton;rSize=5;perimeter=none;whiteSpace=wrap;fillColor=#868E96;strokeColor=#DFDFDF;fontColor=#DEE2E6;resizeWidth=1;fontSize=18;" parent="18" vertex="1">
+                    <mxGeometry width="250" height="180" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Some quick example text to build on the card title and make up the bulk of the card&#39;s content." style="html=1;shadow=1;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=#DFDFDF;html=1;whiteSpace=wrap;fillColor=#ffffff;fontColor=#000000;verticalAlign=bottom;align=left;spacing=20;fontSize=14;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="560" width="250" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Image cap" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.topButton;rSize=5;perimeter=none;whiteSpace=wrap;fillColor=#868E96;strokeColor=#DFDFDF;fontColor=#DEE2E6;resizeWidth=1;fontSize=18;" parent="20" vertex="1">
+                    <mxGeometry width="250" height="180" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="Some quick example text to build on the card title and make up the bulk of the card&#39;s content." style="html=1;shadow=1;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=#DFDFDF;html=1;whiteSpace=wrap;fillColor=#ffffff;fontColor=#000000;verticalAlign=bottom;align=left;spacing=20;fontSize=14;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="550" width="250" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="image cap" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.topButton;rSize=5;perimeter=none;whiteSpace=wrap;fillColor=#868E96;strokeColor=#DFDFDF;fontColor=#DEE2E6;resizeWidth=1;fontSize=18;" parent="22" vertex="1">
+                    <mxGeometry width="250" height="180" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="searchbar&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=1;glass=1;sketch=1;curveFitting=1;jiggle=2;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="200" width="310" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="S80ICpuEPdfRnTT5xWcM" name="Card info ">
+        <mxGraphModel dx="1385" dy="2440" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1600" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="mNnbJhr0MjgJ0R9Oe293-1" value="" style="whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;glass=1;rounded=0;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="-70" width="780" height="730" as="geometry"/>
+                </mxCell>
+                <mxCell id="GPabnEVMltEu9YoEtS4w-1" value="log in log out" style="html=1;shadow=1;dashed=0;fillColor=#F8F9FA;strokeColor=none;fontSize=16;fontColor=#7C7C7D;align=right;spacing=15;rounded=1;sketch=1;curveFitting=1;jiggle=2;glass=0;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="-60" width="740" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="GPabnEVMltEu9YoEtS4w-2" value="" style="swimlane;shape=mxgraph.bootstrap.anchor;strokeColor=none;fillColor=none;fontColor=#0085FC;fontStyle=0;childLayout=stackLayout;horizontal=0;startSize=0;horizontalStack=1;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;resizeWidth=0;" parent="GPabnEVMltEu9YoEtS4w-1" vertex="1">
+                    <mxGeometry y="5" width="350" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="GPabnEVMltEu9YoEtS4w-3" value="mybrand" style="text;strokeColor=none;align=center;verticalAlign=middle;spacingLeft=10;spacingRight=10;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fillColor=none;fontColor=#181819;fontSize=16;" parent="GPabnEVMltEu9YoEtS4w-2" vertex="1">
+                    <mxGeometry width="140" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="GPabnEVMltEu9YoEtS4w-4" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="GPabnEVMltEu9YoEtS4w-2" source="GPabnEVMltEu9YoEtS4w-6" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="280" y="10" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="GPabnEVMltEu9YoEtS4w-5" value="Pokemon Library" style="text;strokeColor=none;align=center;verticalAlign=middle;spacingLeft=10;spacingRight=10;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fillColor=none;fontColor=#7C7C7D;fontSize=14;" parent="GPabnEVMltEu9YoEtS4w-2" vertex="1">
+                    <mxGeometry x="140" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="GPabnEVMltEu9YoEtS4w-6" value="&lt;span style=&quot;color: rgb(131, 131, 132);&quot;&gt;Dashboard&lt;/span&gt;" style="text;strokeColor=none;align=center;verticalAlign=middle;spacingLeft=10;spacingRight=10;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fillColor=none;fontColor=#181819;fontSize=14;" parent="GPabnEVMltEu9YoEtS4w-2" vertex="1">
+                    <mxGeometry x="220" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="GPabnEVMltEu9YoEtS4w-7" value="Favorites&amp;nbsp;" style="text;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;spacingRight=10;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fillColor=none;fontColor=#7C7C7D;fontSize=14;" parent="GPabnEVMltEu9YoEtS4w-2" vertex="1">
+                    <mxGeometry x="280" width="70" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="k0safb8ueX71qN3ROEe6-1" value="&lt;font style=&quot;font-size: 45px;&quot;&gt;Foto&lt;/font&gt;" style="whiteSpace=wrap;html=1;glass=1;sketch=1;curveFitting=1;jiggle=2;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="30" width="210" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="k0safb8ueX71qN3ROEe6-2" value="info" style="whiteSpace=wrap;html=1;rounded=1;glass=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="30" width="370" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="k0safb8ueX71qN3ROEe6-3" value="info" style="whiteSpace=wrap;html=1;rounded=1;glass=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="150" width="290" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="k0safb8ueX71qN3ROEe6-4" value="Naam van de pokemon&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=1;glass=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="-20" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="k0safb8ueX71qN3ROEe6-5" value="evolutions" style="whiteSpace=wrap;html=1;rounded=1;glass=1;shadow=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="310" width="650" height="270" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
