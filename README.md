@@ -97,7 +97,7 @@ Each feature contains:
 
 ## **3. Technology: Zustand for State Management**
 
-For this app, I use (**Zustand**)[https://zustand-demo.pmnd.rs/] as the state management solution instead of local storage.
+For this app, I use [Zustand](https://zustand-demo.pmnd.rs/) as the state management solution instead of local storage.
 
 **Why Zustand?**
 - Zustand provides a centralized, reactive way to manage data (such as teams, favorites, and Pokemon lists).
