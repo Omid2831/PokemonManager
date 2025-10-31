@@ -1,5 +1,6 @@
 import React from "react";
 import { Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 import usePokeStore from "../shared/hooks/usePokeStore";
 import type { Pokemon } from "../shared/api/pokemon-search-api";
 import type { Team, AddResult } from "../shared/hooks/usePokeStore";
@@ -18,7 +19,9 @@ const PokemonPlayer: React.FC<Props> = ({ pokemon, teams, addPokemonToTeam }) =>
   const isFavorite = usePokeStore((s) => s.isFavorite)(pokemon.id);
 
   return (
-    <div className="relative mt-8 p-6 rounded-3xl border border-gray-200 bg-gradient-to-b from-white to-gray-50 shadow-lg max-w-md mx-auto hover:scale-[1.02] transition-transform duration-200">
+    <div
+      className="relative mt-8 p-6 rounded-3xl border border-gray-200 bg-gradient-to-b from-white to-gray-50 shadow-lg max-w-md mx-auto hover:scale-[1.02] transition-transform duration-200"
+    >
 
       {/* Favorite Heart */}
       <button
@@ -31,8 +34,11 @@ const PokemonPlayer: React.FC<Props> = ({ pokemon, teams, addPokemonToTeam }) =>
         />
       </button>
 
-      {/* Name */}
-      <h2 className="text-center text-3xl font-bold capitalize text-gray-800 mb-4">{pokemon.name}</h2>
+
+      {/* Name (clickable -> details) */}
+      <Link to={`/pokemon/${pokemon.id}`} className="no-underline">
+        <h2 className="text-center text-3xl font-bold capitalize text-gray-800 mb-4">{pokemon.name}</h2>
+      </Link>
 
       {/* Image */}
       {pokemon.sprites?.front_default && (
@@ -53,9 +59,9 @@ const PokemonPlayer: React.FC<Props> = ({ pokemon, teams, addPokemonToTeam }) =>
               key={t.type?.name}
               className={`px-3 py-1 rounded-full text-sm font-semibold capitalize
                           ${t.type?.name === "fire" ? "bg-red-200 text-red-800" :
-                             t.type?.name === "water" ? "bg-blue-200 text-blue-800" :
-                             t.type?.name === "grass" ? "bg-green-200 text-green-800" :
-                             "bg-gray-200 text-gray-700"}`}
+                  t.type?.name === "water" ? "bg-blue-200 text-blue-800" :
+                    t.type?.name === "grass" ? "bg-green-200 text-green-800" :
+                      "bg-gray-200 text-gray-700"}`}
             >
               {t.type?.name}
             </span>
