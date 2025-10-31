@@ -8,6 +8,7 @@ import TeamManager from './feature/teams/TeamManager';
 import About from './home/About';
 import NotFound from './feature/error/NotFound';
 import FavPokemon from './feature/favorites/FavPokemon';
+import Details from './feature/details/Details';
 
 
 const App: React.FC = () => {
@@ -27,12 +28,14 @@ const App: React.FC = () => {
           <Route path='/teams' element={<TeamManager />} />
           {/* Example route kept for potential pokemon detail pages (adjust if needed) */}
           <Route path='/pokemon' element={<TeamManager />} />
+          {/* Direct details route matching links like /pokemon/12 */}
+          <Route path='/pokemon/:id' element={<Details />} />
           {/* About page */}
           <Route path='/about' element={<About />} />
           {/* Favorites page */}
           <Route path='/favorites' element={<FavPokemon />} />
 
-           {/* Catch-all 404 route */}
+          {/* Catch-all 404 route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </HomeProvider>
