@@ -76,7 +76,6 @@ const Details: React.FC = () => {
                             <img
                                 src={
                                     pokemon.sprites?.other?.["official-artwork"]?.front_default ||
-                                    pokemon.sprites?.front_default ||
                                     undefined
                                 }
                                 alt={pokemon.name}
